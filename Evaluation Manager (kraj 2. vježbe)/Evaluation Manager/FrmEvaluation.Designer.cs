@@ -48,6 +48,7 @@
             this.cboActivities.Name = "cboActivities";
             this.cboActivities.Size = new System.Drawing.Size(271, 24);
             this.cboActivities.TabIndex = 0;
+            this.cboActivities.SelectedIndexChanged += new System.EventHandler(this.cboActivities_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -164,6 +165,7 @@
             this.btnCancle.TabIndex = 14;
             this.btnCancle.Text = "Odustani";
             this.btnCancle.UseVisualStyleBackColor = true;
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // FrmEvaluation
             // 
@@ -187,6 +189,7 @@
             this.Controls.Add(this.cboActivities);
             this.Name = "FrmEvaluation";
             this.Text = "FrmEvaluation";
+            this.Load += new System.EventHandler(this.FrmEvaluation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numPoints)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

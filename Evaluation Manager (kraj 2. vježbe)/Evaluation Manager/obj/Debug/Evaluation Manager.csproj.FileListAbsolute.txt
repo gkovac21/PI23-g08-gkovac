@@ -35,3 +35,4 @@ C:\Users\gabri\Source\Repos\PI23-g08-gkovac\Evaluation Manager (kraj 2. vježbe)
 C:\Users\gabri\Source\Repos\PI23-g08-gkovac\Evaluation Manager (kraj 2. vježbe)\Evaluation Manager\obj\Debug\Evaluation Manager.csproj.CopyComplete
 C:\Users\gabri\Source\Repos\PI23-g08-gkovac\Evaluation Manager (kraj 2. vježbe)\Evaluation Manager\obj\Debug\Evaluation Manager.exe
 C:\Users\gabri\Source\Repos\PI23-g08-gkovac\Evaluation Manager (kraj 2. vježbe)\Evaluation Manager\obj\Debug\Evaluation Manager.pdb
+C:\Users\gabri\Source\Repos\PI23-g08-gkovac\Evaluation Manager (kraj 2. vježbe)\Evaluation Manager\obj\Debug\Evaluation_Manager.FrmEvaluation.resources
