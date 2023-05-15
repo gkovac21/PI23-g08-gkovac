@@ -3,6 +3,7 @@ using Evaluation_Manager.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -53,8 +54,7 @@ namespace Evaluation_Manager.Repositories
             int id = int.Parse(reader["Id"].ToString());
             string firstName = reader["FirstName"].ToString();
             string lastName = reader["LastName"].ToString();
-            int grade = int.Parse(reader["Grade"].ToString());
-
+            int.TryParse(reader["Grade"].ToString(), out int grade);
             var student = new Student
             {
                 Id = id,
