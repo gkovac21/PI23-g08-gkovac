@@ -13,6 +13,7 @@ using System.Windows.Forms;
 namespace Evaluation_Manager {
     public partial class FrmEvaluation : Form {
         private Student student;
+        public Student SelectedStudent { get => student; set =>student=value; }
 
         public FrmEvaluation(Student selectedStudent) {
             InitializeComponent();
@@ -41,9 +42,28 @@ namespace Evaluation_Manager {
             currentActivity.MaxPoints;
             numPoints.Minimum = 0;
             numPoints.Maximum = currentActivity.MaxPoints;
+
+            var evaluation = EvaluationRepository.GetEvaluation(SelectedStudent, currentActivity);
+            if(evaluation != null) {
+                txtTeacher.Text = evaluation.Evaluator.ToString();
+                txtEvaluationDate.Text = evaluation.EvaluationDate.ToString();
+                numPoints.Value= evaluation.Points;
+            } else {
+                txtTeacher.Text = FrmLogin.LoggedTeacher.ToString();
+                txtEvaluationDate.Text = "-";
+                numPoints.Value = 0;
+            }
         }
 
         private void btnCancle_Click(object sender, EventArgs e) {
+            Close();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e) {
+            var activity = cboActivities.SelectedItem as Activity;
+            var teacher = FrmLogin.LoggedTeacher;
+            int points = (int)numPoints.Value;
+            teacher.PerformEvaluation(SelectedStudent, activity, points);
             Close();
         }
     }

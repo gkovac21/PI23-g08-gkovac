@@ -54,6 +54,7 @@ namespace Evaluation_Manager.Repositories
             int id = int.Parse(reader["Id"].ToString());
             string firstName = reader["FirstName"].ToString();
             string lastName = reader["LastName"].ToString();
+
             int.TryParse(reader["Grade"].ToString(), out int grade);
             var student = new Student
             {
