@@ -51,3 +51,4 @@ C:\Users\foi.LABOS\Source\Repos\PI23-g08-gkovac1\Evaluation Manager (kraj 2. vje
 C:\Users\foi.LABOS\Source\Repos\PI23-g08-gkovac1\Evaluation Manager (kraj 2. vježbe)\Evaluation Manager\obj\Debug\Evaluation Manager.csproj.CopyComplete
 C:\Users\foi.LABOS\Source\Repos\PI23-g08-gkovac1\Evaluation Manager (kraj 2. vježbe)\Evaluation Manager\obj\Debug\Evaluation Manager.exe
 C:\Users\foi.LABOS\Source\Repos\PI23-g08-gkovac1\Evaluation Manager (kraj 2. vježbe)\Evaluation Manager\obj\Debug\Evaluation Manager.pdb
+C:\Users\foi.LABOS\Source\Repos\PI23-g08-gkovac1\Evaluation Manager (kraj 2. vježbe)\Evaluation Manager\obj\Debug\Evaluation_Manager.FrmFinalReport.resources
